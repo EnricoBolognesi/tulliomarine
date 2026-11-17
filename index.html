@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Tullio Marine — Location et vente de bateaux</title>
+    <meta
+      name="description"
+      content="Tullio Marine : location de bateaux à la journée ou pour les vacances et vente de bateaux neufs et d'occasion. Conseil, entretien et essais en mer sur rendez-vous."
+    />
+    <meta name="theme-color" content="#0b2236" />
+    <meta property="og:title" content="Tullio Marine — Location et vente de bateaux" />
+    <meta
+      property="og:description"
+      content="Louez un bateau pour une journée ou choisissez celui que vous garderez. Tullio Marine vous accompagne dans les deux cas."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:image" content="/poster.webp" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonts load without blocking first paint; system fallbacks show until they arrive. -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500&family=Inter:wght@400;500;600&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link rel="preload" as="image" href="/poster.webp" type="image/webp" fetchpriority="high" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/sections.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Tullio Marine",
+        "description": "Location et vente de bateaux.",
+        "sameAs": ["https://www.instagram.com/tullio_marine/"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Tullio Marine, accueil">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Tullio&nbsp;Marine
+      </a>
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="#location">Location</a>
+        <a href="#vente">Vente</a>
+        <a href="#services">Services</a>
+        <a href="#questions">Questions</a>
+        <a class="nav-cta" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <!-- ============ Hero: the 3D banner ============ -->
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="hero-poster" aria-hidden="true"></div>
+        <div class="hero-stage" id="stage" aria-hidden="true"></div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">Location et vente de bateaux</p>
+          <h1 id="hero-title">La mer, <em>à votre façon.</em></h1>
+          <p class="lede">
+            Pour une journée ou pour toujours. Louez le bateau qu'il vous faut pour votre sortie,
+            ou choisissez avec nous celui que vous garderez.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#location">Louer un bateau</a>
+            <a class="btn btn-ghost" href="#vente">Bateaux à vendre</a>
+          </div>
+        </div>
+
+        <div class="hero-tools" id="hero-tools" hidden>
+          <div class="tod" role="radiogroup" aria-label="Moment de la journée">
+            <button type="button" role="radio" aria-checked="false" data-tod="mattino">Matin</button>
+            <button type="button" role="radio" aria-checked="true" data-tod="giorno">Journée</button>
+            <button type="button" role="radio" aria-checked="false" data-tod="tramonto">Coucher</button>
+          </div>
+          <p class="drag-hint">Faites glisser pour tourner autour</p>
+        </div>
+      </section>
+
+      <!-- ============ Two ways in ============ -->
+      <section class="section paths" aria-labelledby="paths-title">
+        <header class="section-head">
+          <p class="kicker">Deux façons de prendre la mer</p>
+          <h2 id="paths-title">Le louer ou le faire vôtre</h2>
+          <p class="section-lede">
+            Certains veulent une journée au mouillage entre amis, d'autres cherchent le bateau
+            d'une vie. Chez nous, les deux chemins existent, avec les mêmes personnes pour vous
+            suivre.
+          </p>
+        </header>
+
+        <div class="path-grid">
+          <article class="path path-rent">
+            <p class="path-tag">Location</p>
+            <h3>Un bateau prêt, quand vous le voulez</h3>
+            <p>
+              Choisissez le bateau, la date et le nombre de personnes. Nous nous occupons du
+              reste : vous le trouvez propre, le plein fait et expliqué dans le détail.
+            </p>
+            <ul class="ticks">
+              <li>Demi-journée, journée entière ou plusieurs jours</li>
+              <li>Avec ou sans skipper</li>
+              <li>Prise en main à bord avant le départ</li>
+            </ul>
+            <a class="btn btn-light" href="#location">Comment se passe la location</a>
+          </article>
+
+          <article class="path path-buy">
+            <p class="path-tag">Vente</p>
+            <h3>Le bon bateau, choisi ensemble</h3>
+            <p>
+              Nous vous aidons à trouver le bateau qui vous correspond, selon votre façon de
+              naviguer et l'endroit où vous le garderez. Puis vous l'essayez en mer avant de
+              décider.
+            </p>
+            <ul class="ticks">
+              <li>Bateaux neufs et d'occasion</li>
+              <li>Essai en mer sur rendez-vous</li>
+              <li>Un suivi après la livraison</li>
+            </ul>
+            <a class="btn btn-light" href="#vente">Voir ce que nous vendons</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ Rental ============ -->
+      <section class="section" id="location" aria-labelledby="rent-title">
+        <header class="section-head">
+          <p class="kicker">Location</p>
+          <h2 id="rent-title">De la demande au large, en trois étapes</h2>
+        </header>
+
+        <ol class="steps">
+          <li>
+            <span class="step-n" aria-hidden="true">1</span>
+            <h3>Dites-nous ce que vous avez en tête</h3>
+            <p>Date, nombre de personnes et type de sortie. Nous vous proposons les bateaux adaptés et disponibles.</p>
+          </li>
+          <li>
+            <span class="step-n" aria-hidden="true">2</span>
+            <h3>Confirmez la réservation</h3>
+            <p>Vous recevez un devis clair, avec ce qui est compris et ce qui ne l'est pas.</p>
+          </li>
+          <li>
+            <span class="step-n" aria-hidden="true">3</span>
+            <h3>Montez à bord</h3>
+            <p>Nous vous remettons le bateau prêt et vous expliquons les commandes, l'équipement et la zone de navigation.</p>
+          </li>
+        </ol>
+
+        <h3 class="sub-title">Quel bateau cherchez-vous ?</h3>
+        <div class="card-grid">
+          <article class="card">
+            <svg class="card-art" viewBox="0 0 200 90" aria-hidden="true">
+              <path d="M14 58h150c10 0 18-5 24-14H40c-12 0-20 5-26 14z" />
+              <path class="thin" d="M70 44V30h44l12 14" />
+              <path class="wave" d="M6 72c16 8 32 8 48 0s32-8 48 0 32 8 48 0 32-8 44-2" />
+            </svg>
+            <h4>Semi-rigides et petits open</h4>
+            <p>Maniables et simples à piloter, pour une journée de criques et de baignades.</p>
+          </article>
+          <article class="card">
+            <svg class="card-art" viewBox="0 0 200 90" aria-hidden="true">
+              <path d="M10 58h160c8 0 16-6 22-18H34C22 40 14 48 10 58z" />
+              <path class="thin" d="M62 40V22h62M124 22l22 18M62 22l-10 18" />
+              <path class="wave" d="M6 72c16 8 32 8 48 0s32-8 48 0 32 8 48 0 32-8 44-2" />
+            </svg>
+            <h4>Open et walkaround</h4>
+            <p>Plus d'espace sur le pont, bain de soleil et taud : confortables à plusieurs.</p>
+          </article>
+          <article class="card">
+            <svg class="card-art" viewBox="0 0 200 90" aria-hidden="true">
+              <path d="M8 58h164c8 0 16-6 22-18H30C18 40 12 48 8 58z" />
+              <path class="thin" d="M46 40l8-20h70l26 20M70 20v20M100 20v20" />
+              <path class="wave" d="M6 72c16 8 32 8 48 0s32-8 48 0 32 8 48 0 32-8 44-2" />
+            </svg>
+            <h4>Bateaux à cabine</h4>
+            <p>Cabine et sanitaires à bord, pour rester en mer plus longtemps.</p>
+          </article>
+        </div>
+        <p class="note">
+          <span class="todo">À compléter :</span> liste des bateaux en location avec photos, nombre
+          de places et tarifs.
+        </p>
+      </section>
+
+      <!-- ============ Sales ============ -->
+      <section class="section section-tint" id="vente" aria-labelledby="buy-title">
+        <div class="split">
+          <div>
+            <p class="kicker">Vente</p>
+            <h2 id="buy-title">Acheter un bateau, c'est un choix qui dure. Faisons-le bien.</h2>
+            <p class="section-lede">
+              Nous ne partons pas du catalogue mais de vous : combien de personnes à bord, où vous
+              naviguez, quel entretien vous souhaitez. De là, nous réduisons le choix à quelques
+              bateaux qu'il vaut la peine d'essayer.
+            </p>
+            <a class="btn btn-dark" href="#contact" data-interest="vendita">Parlons-en</a>
+          </div>
+          <ul class="feature-list">
+            <li>
+              <h3>Neuf</h3>
+              <p>Des bateaux neufs, équipés et motorisés selon l'usage que vous en ferez.</p>
+            </li>
+            <li>
+              <h3>Occasion sélectionnée</h3>
+              <p>Des bateaux d'occasion contrôlés avant d'être proposés, avec leur historique.</p>
+            </li>
+            <li>
+              <h3>Essai en mer</h3>
+              <p>Un bateau se choisit en naviguant. L'essai se fixe sur rendez-vous.</p>
+            </li>
+            <li>
+              <h3>Après la livraison</h3>
+              <p>Nous restons votre interlocuteur pour les révisions, les pièces et les imprévus.</p>
+            </li>
+          </ul>
+        </div>
+        <p class="note">
+          <span class="todo">À compléter :</span> marques distribuées et bateaux actuellement en
+          vente.
+        </p>
+      </section>
+
+      <!-- ============ Services ============ -->
+      <section class="section" id="services" aria-labelledby="services-title">
+        <header class="section-head">
+          <p class="kicker">Services</p>
+          <h2 id="services-title">Tout ce qu'il faut autour du bateau</h2>
+        </header>
+        <div class="service-grid">
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18v3h3l6.3-6.3a4 4 0 0 0 5.4-5.4l-2.4 2.4-2.1-.5-.5-2.1z" /></svg>
+            <h3>Entretien et réparation</h3>
+            <p>Révisions, contrôles de saison et interventions sur moteurs et équipements.</p>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20V9l7-5 7 5v11M9 20v-6h6v6" /></svg>
+            <h3>Hivernage</h3>
+            <p>Un endroit sûr pour le bateau hors saison, prêt à votre retour.</p>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.2" /><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6" /></svg>
+            <h3>Skipper</h3>
+            <p>Si vous préférez ne pas vous occuper du pilotage, l'un de nous vient à bord.</p>
+          </article>
+          <article class="service">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6" /></svg>
+            <h3>Conseil à l'achat</h3>
+            <p>Un avis franc avant d'acheter, y compris sur un bateau que vous avez déjà vu.</p>
+          </article>
+        </div>
+        <p class="note"><span class="todo">À confirmer :</span> lesquels de ces services l'entreprise propose réellement.</p>
+      </section>
+
+      <!-- ============ FAQ ============ -->
+      <section class="section section-narrow" id="questions" aria-labelledby="faq-title">
+        <header class="section-head">
+          <p class="kicker">Questions fréquentes</p>
+          <h2 id="faq-title">Avant de monter à bord</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Faut-il un permis bateau pour louer ?</summary>
+            <p>
+              Cela dépend du bateau et de sa motorisation. Quand vous nous écrivez, dites-nous si
+              vous avez le permis : nous vous proposons les bateaux que vous pouvez piloter
+              vous-même, ou une sortie avec skipper.
+            </p>
+          </details>
+          <details>
+            <summary>Qu'est-ce qui est compris dans la location ?</summary>
+            <p>
+              Le devis détaille poste par poste ce qui est compris et ce qui ne l'est pas : pas de
+              surprise au retour.
+            </p>
+          </details>
+          <details>
+            <summary>Et si la météo est mauvaise ?</summary>
+            <p>
+              C'est la mer qui décide. Si les conditions ne permettent pas de sortir en sécurité,
+              nous cherchons ensemble une autre date.
+            </p>
+          </details>
+          <details>
+            <summary>Puis-je essayer un bateau avant de l'acheter ?</summary>
+            <p>Oui : l'essai en mer fait partie du choix et s'organise sur rendez-vous.</p>
+          </details>
+        </div>
+        <p class="note"><span class="todo">À confirmer :</span> conditions réelles de location (permis, caution, carburant, météo).</p>
+      </section>
+
+      <!-- ============ Contact ============ -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-inner">
+          <div class="contact-copy">
+            <p class="kicker">Contact</p>
+            <h2 id="contact-title">Parlez-nous de votre sortie, ou du bateau que vous cherchez</h2>
+            <p>Nous vous répondons avec une proposition concrète : bateaux disponibles, dates et tarifs.</p>
+            <dl class="contact-list">
+              <div>
+                <dt>Téléphone</dt>
+                <dd><span class="todo">à renseigner</span></dd>
+              </div>
+              <div>
+                <dt>E-mail</dt>
+                <dd><span class="todo">à renseigner</span></dd>
+              </div>
+              <div>
+                <dt>Adresse</dt>
+                <dd><span class="todo">à renseigner</span></dd>
+              </div>
+              <div>
+                <dt>Instagram</dt>
+                <dd><a href="https://www.instagram.com/tullio_marine/" rel="noopener">@tullio_marine</a></dd>
+              </div>
+            </dl>
+          </div>
+
+          <form class="contact-form" id="contact-form" data-email="" novalidate>
+            <fieldset class="choice">
+              <legend>Qu'est-ce qui vous intéresse ?</legend>
+              <label><input type="radio" name="interesse" value="Location" checked /> <span>Location</span></label>
+              <label><input type="radio" name="interesse" value="Achat" /> <span>Achat</span></label>
+              <label><input type="radio" name="interesse" value="Entretien" /> <span>Entretien</span></label>
+            </fieldset>
+            <div class="field">
+              <label for="f-nome">Nom</label>
+              <input id="f-nome" name="nome" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="f-contatto">Téléphone ou e-mail</label>
+              <input id="f-contatto" name="contatto" type="text" autocomplete="email" required />
+            </div>
+            <div class="field field-date">
+              <label for="f-data">Date souhaitée <span class="optional">(facultative)</span></label>
+              <input id="f-data" name="data" type="date" />
+            </div>
+            <div class="field">
+              <label for="f-messaggio">Message</label>
+              <textarea id="f-messaggio" name="messaggio" rows="4" placeholder="Combien vous êtes, quel type de bateau vous cherchez…"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Envoyer la demande</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Tullio&nbsp;Marine
+      </p>
+      <nav aria-label="Pied de page">
+        <a href="#location">Location</a>
+        <a href="#vente">Vente</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="legal">© <span id="year">2026</span> Tullio Marine. <span class="todo">Mentions légales à renseigner.</span></p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
